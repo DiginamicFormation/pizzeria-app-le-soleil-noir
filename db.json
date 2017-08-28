@@ -29,9 +29,7 @@
             "nom": "regina",
             "prix": "12.5",
             "categorie": "VIANDE",
-            "ingredients": {
-
-            }
+            "ingredients": {}
         }
     ],
     "categorie": {
@@ -41,5 +39,14 @@
         "SUCRESALE": "Sucré Salé"
     },
     "commandes": [],
-    "utilisateurs": []
+    "utilisateurs": [
+        {
+            "id": 1,
+            "nom": "kuntz",
+            "prenom": "thomas",
+            "email": "test@web.com",
+            "motdepasse": "test",
+            "adress": "nantes"
+        }
+    ]
 }
