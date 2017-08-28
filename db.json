@@ -1,12 +1,48 @@
-
 {
-    "pizzas": [
-
-    ],
+    "pizzas": [],
     "commandes": [
-
+        {
+            "pizzas": [
+                {
+                    "pizzaId": "1",
+                    "quantite": "3"
+                },
+                {
+                    "pizzaId": "2",
+                    "quantite": "4"
+                }
+            ],
+            "utilisateursId": "1",
+            "typeLivraison": "emporter"
+        },
+                {
+            "pizzas": [
+                {
+                    "pizzaId": "1",
+                    "quantite": "3"
+                },
+                {
+                    "pizzaId": "2",
+                    "quantite": "4"
+                }
+            ],
+            "utilisateursId": "2",
+            "typeLivraison": "livraison"
+        },
+                {
+            "pizzas": [
+                {
+                    "pizzaId": "3",
+                    "quantite": "2"
+                },
+                {
+                    "pizzaId": "4",
+                    "quantite": "1"
+                }
+            ],
+            "utilisateursId": "3",
+            "typeLivraison": "emporter"
+        }
     ],
-    "utilisateurs": [
-
-    ]
+    "utilisateurs": []
 }
