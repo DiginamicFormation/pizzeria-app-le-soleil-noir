@@ -1,12 +1,45 @@
-
 {
     "pizzas": [
+        {
+            "id": "1",
+            "nom": "napolitaine",
+            "prix": "10.5",
+            "categorie": "VIANDE"
+        },
+        {
+            "id": "2",
+            "nom": "Fruit de mer",
+            "prix": "13",
+            "categorie": "POISSON"
+        },
+        {
+            "id": "3",
+            "nom": "4 légumes",
+            "prix": "10",
+            "categorie": "VEGETARIENNE"
+        },
+        {
+            "id": "3",
+            "nom": "Hawaïenne",
+            "prix": "10",
+            "categorie": "SUCRESALE"
+        },
+        {
+            "id": "4",
+            "nom": "regina",
+            "prix": "12.5",
+            "categorie": "VIANDE",
+            "ingredients": {
 
+            }
+        }
     ],
-    "commandes": [
-
-    ],
-    "utilisateurs": [
-
-    ]
+    "categorie": {
+        "VIANDE": "Viande",
+        "POISSON": "Poisson",
+        "VEGETARIENNE": "Végétarienne",
+        "SUCRESALE": "Sucré Salé"
+    },
+    "commandes": [],
+    "utilisateurs": []
 }

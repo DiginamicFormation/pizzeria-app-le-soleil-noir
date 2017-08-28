@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "run-p json-server webpack-dev-server",
+    "webpack-dev-server": "webpack-dev-server",
+    "dist": "webpack -p",
+    "json-server": "json-server --watch db.json --port 3000"
   },
   "repository": {
     "type": "git",
