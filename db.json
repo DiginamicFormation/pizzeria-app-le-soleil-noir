@@ -4,6 +4,7 @@
             "id": 1,
             "nom": "4 fromages",
             "prix": 8,
+            "imageUrl": "img/4fromages.jpg",
             "categorie": "fromage",
             "ingredients": [
                 "tomate",
@@ -16,6 +17,7 @@
             "id": 2,
             "nom": "4 saisons",
             "prix": 9,
+            "imageUrl": "img/4saisons.jpg",
             "categorie": "viande",
             "ingredients": [
                 "tomate",
@@ -26,6 +28,7 @@
             "id": 3,
             "nom": "Chorizo",
             "prix": 10,
+            "imageUrl": "img/chorizo.jpg",
             "categorie": "viande",
             "ingredients": [
                 "tomate",
