@@ -1,0 +1,40 @@
+{
+  "name": "pizzeria-app-le-soleil-noir",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiginamicFormation/pizzeria-app-le-soleil-noir.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiginamicFormation/pizzeria-app-le-soleil-noir/issues"
+  },
+  "homepage": "https://github.com/DiginamicFormation/pizzeria-app-le-soleil-noir#readme",
+  "devDependencies": {
+    "angular": "^1.6.4",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.28.5",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "json-server": "^0.12.0",
+    "npm-run-all": "^4.0.2",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {
+    "angular-resource": "^1.6.6",
+    "bootstrap": "^3.3.7",
+    "angular-ui-bootstrap": "^2.5.0"
+  }
+}
