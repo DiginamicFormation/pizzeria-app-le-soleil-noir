@@ -1,4 +1,3 @@
-
 {
     "pizzas": [
         {
@@ -7,51 +6,84 @@
             "prix": 8,
             "categorie": "fromage",
             "ingredients": [
-                "tomates",
-                "fromage"
+                "tomate",
+                "fromage",
+                "chèvre",
+                "roquefort"
             ]
         },
         {
             "id": 2,
             "nom": "4 saisons",
-            "prix": 8,
-            "categorie": "poisson"
+            "prix": 9,
+            "categorie": "viande",
+            "ingredients": [
+                "tomate",
+                "fromage"
+            ]
         },
         {
             "id": 3,
             "nom": "Chorizo",
-            "prix": 8,
-            "categorie": "poisson"
+            "prix": 10,
+            "categorie": "viande",
+            "ingredients": [
+                "tomate",
+                "fromage"
+            ]
         },
         {
             "id": 4,
             "nom": "Napolitaine",
-            "prix": 8,
-            "categorie": "poisson"
+            "prix": 12,
+            "categorie": "poisson",
+            "ingredients": [
+                "tomate",
+                "fromage"
+            ]
         },
         {
             "id": 5,
             "nom": "Royale",
-            "prix": 8,
-            "categorie": "poisson"
+            "prix": 12,
+            "categorie": "viande",
+            "ingredients": [
+                "tomate",
+                "fromage"
+            ]
         },
         {
             "id": 6,
             "nom": "Chèvre miel",
-            "prix": 8,
-            "categorie": "poisson"
+            "prix": 14,
+            "categorie": "fromage",
+            "ingredients": [
+                "tomate",
+                "fromage"
+            ]
         },
         {
             "id": 7,
             "nom": "Mozzarella",
-            "prix": 8,
-            "categorie": "poisson"
+            "prix": 9,
+            "categorie": "fromage",
+            "ingredients": [
+                "tomate",
+                "fromage"
+            ]
         }
     ],
     "commandes": [
 
     ],
-    "utilisateurs": [
-
+     "utilisateurs": [
+        {
+            "id": 1,
+            "nom": "kuntz",
+            "prenom": "thomas",
+            "email": "test@web.com",
+            "motdepasse": "test",
+            "adress": "nantes"
+        }
     ]
 }
