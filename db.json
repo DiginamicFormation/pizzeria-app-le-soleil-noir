@@ -1,7 +1,52 @@
 
 {
     "pizzas": [
-
+        {
+            "id": 1,
+            "nom": "4 fromages",
+            "prix": 8,
+            "categorie": "fromage",
+            "ingredients": [
+                "tomates",
+                "fromage"
+            ]
+        },
+        {
+            "id": 2,
+            "nom": "4 saisons",
+            "prix": 8,
+            "categorie": "poisson"
+        },
+        {
+            "id": 3,
+            "nom": "Chorizo",
+            "prix": 8,
+            "categorie": "poisson"
+        },
+        {
+            "id": 4,
+            "nom": "Napolitaine",
+            "prix": 8,
+            "categorie": "poisson"
+        },
+        {
+            "id": 5,
+            "nom": "Royale",
+            "prix": 8,
+            "categorie": "poisson"
+        },
+        {
+            "id": 6,
+            "nom": "Chèvre miel",
+            "prix": 8,
+            "categorie": "poisson"
+        },
+        {
+            "id": 7,
+            "nom": "Mozzarella",
+            "prix": 8,
+            "categorie": "poisson"
+        }
     ],
     "commandes": [
 
