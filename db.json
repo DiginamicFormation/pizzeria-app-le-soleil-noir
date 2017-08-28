@@ -1,12 +1,13 @@
-
 {
-    "pizzas": [
-
-    ],
-    "commandes": [
-
-    ],
-    "utilisateurs": [
-
-    ]
+  "pizzas": [],
+  "commandes": [],
+  "utilisateurs": [
+    {
+      "nom": "kuntz",
+      "prenom": "thomas",
+      "email": "test@web.com",
+      "motdepasse": "test",
+      "adress": "nantes"
+    }
+  ]
 }
