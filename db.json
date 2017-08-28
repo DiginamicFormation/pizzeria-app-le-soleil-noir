@@ -1,43 +1,74 @@
 {
     "pizzas": [
         {
-            "id": "1",
+            "id": 1,
             "nom": "napolitaine",
-            "prix": "10.5",
-            "categorie": "VIANDE"
+            "prix": 10.5,
+            "categorie": "Viande",
+            "ingredients": [
+                "tomates",
+                "champignon",
+                "jambon"
+            ]
         },
         {
-            "id": "2",
+            "id": 2,
             "nom": "Fruit de mer",
-            "prix": "13",
-            "categorie": "POISSON"
+            "prix": 13,
+            "categorie": "Poisson",
+            "ingredients": [
+                "tomates",
+                "moules",
+                "crevettes"
+            ]
         },
         {
-            "id": "3",
+            "id": 3,
             "nom": "4 légumes",
-            "prix": "10",
-            "categorie": "VEGETARIENNE"
+            "prix": 10,
+            "categorie": "Végétarienne",
+            "ingredients": [
+                "tomates",
+                "fromage",
+                "poivron",
+                "champignon",
+                "courgette"
+            ]
         },
         {
-            "id": "3",
+            "id": 3,
             "nom": "Hawaïenne",
-            "prix": "10",
-            "categorie": "SUCRESALE"
+            "prix": 10,
+            "categorie": "Sucré Salé",
+            "ingredients": [
+                "tomates",
+                "fromage",
+                "jambon",
+                "ananas"
+            ]
         },
         {
-            "id": "4",
+            "id": 4,
             "nom": "regina",
-            "prix": "12.5",
-            "categorie": "VIANDE",
-            "ingredients": {}
+            "prix": 12.5,
+            "categorie": "Viande",
+            "ingredients": [
+                "tomates",
+                "fromage",
+                "olives"
+            ]
+        },
+        {
+            "id": 5,
+            "nom": "4 fromages",
+            "prix": 8,
+            "categorie": "fromage",
+            "ingredients": [
+                "tomates",
+                "fromage"
+            ]
         }
     ],
-    "categorie": {
-        "VIANDE": "Viande",
-        "POISSON": "Poisson",
-        "VEGETARIENNE": "Végétarienne",
-        "SUCRESALE": "Sucré Salé"
-    },
     "commandes": [],
     "utilisateurs": [
         {
