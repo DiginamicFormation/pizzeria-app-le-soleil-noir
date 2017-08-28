@@ -4,45 +4,54 @@
         {
             "pizzas": [
                 {
-                    "pizzaId": "1",
-                    "quantite": "3"
+                    "pizzaId": 1,
+                    "quantite": 3
                 },
                 {
-                    "pizzaId": "2",
-                    "quantite": "4"
+                    "pizzaId": 2,
+                    "quantite": 4
                 }
             ],
-            "utilisateursId": "1",
+            "utilisateursId": 1,
             "typeLivraison": "emporter"
         },
                 {
             "pizzas": [
                 {
-                    "pizzaId": "1",
-                    "quantite": "3"
+                    "pizzaId": 1,
+                    "quantite": 3
                 },
                 {
-                    "pizzaId": "2",
-                    "quantite": "4"
+                    "pizzaId": 2,
+                    "quantite": 4
                 }
             ],
-            "utilisateursId": "2",
+            "utilisateursId": 2,
             "typeLivraison": "livraison"
         },
                 {
             "pizzas": [
                 {
-                    "pizzaId": "3",
-                    "quantite": "2"
+                    "pizzaId": 3,
+                    "quantite": 2
                 },
                 {
-                    "pizzaId": "4",
-                    "quantite": "1"
+                    "pizzaId": 4,
+                    "quantite": 1
                 }
             ],
-            "utilisateursId": "3",
+            "utilisateursId": 3,
             "typeLivraison": "emporter"
         }
     ],
-    "utilisateurs": []
+  "utilisateurs": [
+    {
+      "id": 1,
+      "nom": "kuntz",
+      "prenom": "thomas",
+      "email": "test@web.com",
+      "motdepasse": "test",
+      "adress": "nantes"
+    }
+  ]
 }
