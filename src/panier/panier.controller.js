@@ -1,7 +1,7 @@
 export default class panierCtrl {
 
-    constructor(apiUrl, panierService) {
-        this.apiUrl = apiUrl
+    constructor(apiUrls, panierService) {
+        this.apiUrls = apiUrls
         this.panierService = panierService
         this.pizzaPanier = []
     }

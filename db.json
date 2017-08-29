@@ -4,7 +4,7 @@
             "id": 1,
             "nom": "4 fromages",
             "prix": 8,
-            "imageUrl": "./images/4fromages.jpg",
+            "imageUrl": "./img/4fromages.jpg",
             "categorie": "fromage",
             "ingredients": [
                 "tomate",
@@ -17,7 +17,7 @@
             "id": 2,
             "nom": "4 saisons",
             "prix": 9,
-            "imageUrl": "./images/4saisons.jpg",
+            "imageUrl": "./img/4saisons.jpg",
             "categorie": "viande",
             "ingredients": [
                 "tomate",
@@ -30,7 +30,7 @@
             "id": 3,
             "nom": "Chorizo",
             "prix": 10,
-            "imageUrl": "./images/chorizo.jpg",
+            "imageUrl": "./img/chorizo.jpg",
             "categorie": "viande",
             "ingredients": [
                 "tomate",
@@ -42,18 +42,19 @@
             "id": 4,
             "nom": "Napolitaine",
             "prix": 12,
-            "imageUrl": "./images/napolitaine.jpg",
+            "imageUrl": "./img/napolitaine.jpg",
             "categorie": "poisson",
             "ingredients": [
                 "tomate",
-                "fromage"
+                "fromage",
+                "anchois"
             ]
         },
         {
             "id": 5,
             "nom": "Royale",
             "prix": 12,
-            "imageUrl": "./images/royale.jpg",
+            "imageUrl": "./img/royale.jpg",
             "categorie": "viande",
             "ingredients": [
                 "tomate",
@@ -65,7 +66,7 @@
             "id": 6,
             "nom": "Chèvre miel",
             "prix": 14,
-            "imageUrl": "./images/chevre-miel.jpg",
+            "imageUrl": "./img/chevre-miel.jpg",
             "categorie": "fromage",
             "ingredients": [
                 "tomate",
@@ -78,7 +79,7 @@
             "id": 7,
             "nom": "Mozzarella",
             "prix": 9,
-            "imageUrl": "./images/mozzarella.jpg",
+            "imageUrl": "./img/mozzarella.jpg",
             "categorie": "fromage",
             "ingredients": [
                 "tomate",
