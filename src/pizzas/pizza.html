@@ -2,9 +2,9 @@
 
 <div class="container">
     <!-- https://stackoverflow.com/questions/14379934/how-to-filter-a-list-in-angularjs-using-several-links -->
-    <button ng-click="$ctrl.filterCat = {}" type="button" class="btn btn-default">Toutes</button>
+    <button ng-click="$ctrl.filterCat = {}" type="button" class="btn btn-default">Toutes ({{$ctrl.pizzas.length}})</button>
 
-    <button ng-repeat="cat in $ctrl.categories" ng-click="$ctrl.update(cat)" type="button" class="btn btn-default">{{cat | capitalize}}</button>
+    <button ng-repeat="cat in $ctrl.categories" ng-click="$ctrl.update(cat)" type="button" class="btn btn-default">{{cat | capitalize}} ({{$ctrl.nbCategories(cat)}})</button>
 
     <br> <br>
 
@@ -25,7 +25,7 @@
                     <button ng-click="$ctrl.ajoutPanier(pizza.id)" type="button" class="btn btn-default btn-block">Ajouter au panier</button>		
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-6">
-                    <button ng-click="$ctrl.retirer()" type="button" class="btn btn-default btn-block">Retirer du panier</button>			
+                    <button ng-click="$ctrl.retirerPanier(pizza.id)" type="button" class="btn btn-default btn-block">Retirer ({{$ctrl.nbPizzasPanierById(pizza.id)}})</button>			
                 </div>
             </div>
         </div>

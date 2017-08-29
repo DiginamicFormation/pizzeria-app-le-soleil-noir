@@ -1,101 +1,79 @@
 {
-    "pizzas": [
-        {
-            "id": 1,
-            "nom": "4 fromages",
-            "prix": 8,
-            "imageUrl": "./img/4fromages.jpg",
-            "categorie": "fromage",
-            "ingredients": [
-                "tomate",
-                "fromage",
-                "chèvre",
-                "roquefort"
-            ]
-        },
-        {
-            "id": 2,
-            "nom": "4 saisons",
-            "prix": 9,
-            "imageUrl": "./img/4saisons.jpg",
-            "categorie": "viande",
-            "ingredients": [
-                "tomate",
-                "fromage",
-                "poivron",
-                "peperonie"
-            ]
-        },
-        {
-            "id": 3,
-            "nom": "Chorizo",
-            "prix": 10,
-            "imageUrl": "./img/chorizo.jpg",
-            "categorie": "viande",
-            "ingredients": [
-                "tomate",
-                "fromage",
-                "chorizo"
-            ]
-        },
-        {
-            "id": 4,
-            "nom": "Napolitaine",
-            "prix": 12,
-            "imageUrl": "./img/napolitaine.jpg",
-            "categorie": "poisson",
-            "ingredients": [
-                "tomate",
-                "fromage",
-                "anchois"
-            ]
-        },
-        {
-            "id": 5,
-            "nom": "Royale",
-            "prix": 12,
-            "imageUrl": "./img/royale.jpg",
-            "categorie": "viande",
-            "ingredients": [
-                "tomate",
-                "fromage",
-                "champignon"
-            ]
-        },
-        {
-            "id": 6,
-            "nom": "Chèvre miel",
-            "prix": 14,
-            "imageUrl": "./img/chevre-miel.jpg",
-            "categorie": "fromage",
-            "ingredients": [
-                "tomate",
-                "fromage",
-                "chèvre",
-                "miel"
-            ]
-        },
-        {
-            "id": 7,
-            "nom": "Mozzarella",
-            "prix": 9,
-            "imageUrl": "./img/mozzarella.jpg",
-            "categorie": "fromage",
-            "ingredients": [
-                "tomate",
-                "Mozzarella"
-            ]
-        }
-    ],
-    "commandes": [],
-    "utilisateurs": [
-        {
-            "id": 1,
-            "nom": "kuntz",
-            "prenom": "thomas",
-            "email": "test@web.com",
-            "motdepasse": "test",
-            "adress": "nantes"
-        }
-    ]
+  "pizzas": [
+    {
+      "id": 1,
+      "nom": "4 fromages",
+      "prix": 8,
+      "imageUrl": "./img/4fromages.jpg",
+      "categorie": "fromage",
+      "ingredients": ["tomate", "fromage", "chèvre", "roquefort"]
+    },
+    {
+      "id": 2,
+      "nom": "4 saisons",
+      "prix": 9,
+      "imageUrl": "./img/4saisons.jpg",
+      "categorie": "viande",
+      "ingredients": ["tomate", "fromage", "poivron", "peperonie"]
+    },
+    {
+      "id": 3,
+      "nom": "Chorizo",
+      "prix": 10,
+      "imageUrl": "./img/chorizo.jpg",
+      "categorie": "viande",
+      "ingredients": ["tomate", "fromage", "chorizo"]
+    },
+    {
+      "id": 4,
+      "nom": "Napolitaine",
+      "prix": 12,
+      "imageUrl": "./img/napolitaine.jpg",
+      "categorie": "poisson",
+      "ingredients": ["tomate", "fromage", "anchois"]
+    },
+    {
+      "id": 5,
+      "nom": "Royale",
+      "prix": 12,
+      "imageUrl": "./img/royale.jpg",
+      "categorie": "viande",
+      "ingredients": ["tomate", "fromage", "champignon"]
+    },
+    {
+      "id": 6,
+      "nom": "Chèvre miel",
+      "prix": 14,
+      "imageUrl": "./img/chevre-miel.jpg",
+      "categorie": "fromage",
+      "ingredients": ["tomate", "fromage", "chèvre", "miel"]
+    },
+    {
+      "id": 7,
+      "nom": "Mozzarella",
+      "prix": 9,
+      "imageUrl": "./img/mozzarella.jpg",
+      "categorie": "fromage",
+      "ingredients": ["tomate", "Mozzarella"]
+    }
+  ],
+  "commandes": [],
+  "utilisateurs": [
+    {
+      "nom": "kuntz",
+      "prenom": "thomas",
+      "email": "test@web.com",
+      "motdepasse": "test",
+      "adresse": "nantes",
+      "id": 1
+    },
+    {
+      "nom": "test",
+      "prenom": "test",
+      "email": "test@test.com",
+      "motdepasse": "test",
+      "adresse": "test",
+      "id": 2
+    }
+  ]
 }
