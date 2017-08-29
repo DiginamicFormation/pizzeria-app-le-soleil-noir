@@ -4,6 +4,7 @@ export default class NouvCompteCtrl {
   }
 
   addCompte() {
-    this.NouvCompteService.addCompte();
+    this.NouvCompteService.addCompte(this.email, this.motdepasse, this.nom, this.prenom, this.adresse);
+    
   }
 }

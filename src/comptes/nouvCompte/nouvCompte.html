@@ -1,31 +1,51 @@
-<section id="nouvCompte">
-    <h3>Création d'un nouveau compte</h3>
+<section id="nouvCompte" class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+    <h3 style="margin:10px">Création d'un nouveau compte</h3>
+    <form name="form" ng-submit="$ctrl.addCompte()" role="form">
 
-    <label class="col-md-4 control-label" for="email">Email</label>
-    <div class="col-md-4">
-        <input id="email" name="email" class="form-control input-md" type="text">
-    </div>
+        <div class="row" style="margin:10px" ng-class="{ 'has-error': form.email.$dirty && form.email.$error.required }">
+            <label class="control-label" style="text-align:right" for="email">Email</label>
+            <div>
+                <input id="email" name="email" ng-model="$ctrl.email" class="form-control input-md" type="email" required>
+            </div>
+            <div ng-show="form.email.$dirty && form.email.$invalid">
+                <span ng-show="form.email.$error.required" class="help-inline">Email requis</span>
+                <span ng-show="form.email.$error.email" class="help-inline">Email invalide</span>
+            </div>
+        </div>
 
-    <label class="col-md-4 control-label" for="motdepasse">Mot de passe</label>
-    <div class="col-md-4">
-        <input id="motdepasse" name="motdepasse" class="form-control input-md" type="text">
-    </div>
+        <div class="row" style="margin:10px" ng-class="{ 'has-error': form.motdepasse.$dirty && form.motdepasse.$error.required }">
+            <label class="control-label" style="text-align:right" for="motdepasse">Mot de passe</label>
+            <div>
+                <input id="motdepasse" name="motdepasse" ng-model="$ctrl.motdepasse" class="form-control input-md" type="password" required>
+            </div>
+            <span ng-show="form.motdepasse.$dirty && form.motdepasse.$error.required" class="help-inline">Mot de passe requis</span>
+        </div>
 
-    <label class="col-md-4 control-label" for="nom">Nom</label>
-    <div class="col-md-4">
-        <input id="nom" name="nom" class="form-control input-md" type="text">
-    </div>
+        <div class="row" style="margin:10px" ng-class="{ 'has-error': form.nom.$dirty && form.nom.$error.required }">
+            <label class="control-label" style="text-align:right" for="nom">Nom</label>
+            <div>
+                <input id="nom" name="nom" ng-model="$ctrl.nom" class="form-control input-md" type="text" required>
+            </div>
+            <span ng-show="form.nom.$dirty && form.nom.$error.required" class="help-inline">Nom requis</span>
+        </div>
 
-    <label class="col-md-4 control-label" for="prenom">Prénom</label>
-    <div class="col-md-4">
-        <input id="prenom" name="prenom" class="form-control input-md" type="text">
-    </div>
+        <div class="row" style="margin:10px" ng-class="{ 'has-error': form.prenom.$dirty && form.prenom.$error.required }">
+            <label class="control-label" style="text-align:right" for="prenom">Prénom</label>
+            <div>
+                <input id="prenom" name="prenom" ng-model="$ctrl.prenom" class="form-control input-md" type="text" required>
+            </div>
+            <span ng-show="form.prenom.$dirty && form.prenom.$error.required" class="help-inline">Prénom requis</span>
+        </div>
 
-    <label class="col-md-4 control-label" for="adresse">Adresse</label>
-    <div class="col-md-4">
-        <input id="adresse" name="adresse" class="form-control input-md" type="text">
-    </div>
+        <div class="row" style="margin:10px" ng-class="{ 'has-error': form.adresse.$dirty && form.adresse.$error.required }">
+            <label class="control-label" style="text-align:right" for="adresse">Adresse</label>
+            <div>
+                <input id="adresse" name="adresse" ng-model="$ctrl.adresse" class="form-control input-md" type="text" required>
+            </div>
+            <span ng-show="form.adresse.$dirty && form.adresse.$error.required" class="help-inline">Adresse requis</span>
+        </div>
 
-    <button type="submit">Créer un compte</button>
+        <button class="btn btn-primary" ng-disabled="form.$invalid || dataLoading" type="submit" style="margin:10px">Créer un compte</button>
 
+    </form>
 </section>

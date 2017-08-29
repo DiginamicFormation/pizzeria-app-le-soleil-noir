@@ -1,8 +1,8 @@
-export default class NouvCompteService {
-  constructor(apiUrls, $resource) {
+export default class AuthService {
+  constructor($resource, apiUrls) {
     this.apiUrls = apiUrls;
     this.$resource = $resource;
-    this.compteResource = this.$resource(
+    this.loginResource = this.$resource(
       this.apiUrls.utilisateurs + ":compteId",
       {
         compteId: "@id"
@@ -19,15 +19,15 @@ export default class NouvCompteService {
     );
   }
 
-  addCompte(email, motdepasse, nom, prenom, adresse) {
-    let nouvCompte = {
-      nom: nom,
-      prenom: prenom,
-      email: email,
-      motdepasse: motdepasse,
-      adresse: adresse
-    };
-    
-    this.compteResource.save(nouvCompte);
+  isAuthenticated() {
+    return true;
+  }
+
+  login(email, motdepasse, callback) {
+    this.loginResource
+      .post({ email: email, motdepasse: motdepasse })
+      .success(function(response) {
+        callback(response);
+      });
   }
 }
