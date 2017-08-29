@@ -1,8 +1,14 @@
-export default class listeCommandeController{
+export default class ListeCommandeController{
 
 
-constructor(listeCommandeService){
-    this.listeCommandeService =listeCommandeService;
+constructor(ListeCommandeService,PizzaService){
+    this.listeCommandeService =ListeCommandeService;
+    this.pizzaService= PizzaService;
+    
+}
+
+commandById(id){
+    return this.listeCommandeService.findById(id).then(  )
 }
 
 
