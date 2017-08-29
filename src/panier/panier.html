@@ -9,7 +9,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="item in $ctrl.pizzaPanier">
+            <tr ng-repeat="item in $ctrl.pizzaPanier track by item.id">
                 <td style="width:12%">
                     <img ng-src="{{item.imageUrl}}" style="width:100%">
                 </td>
@@ -22,14 +22,14 @@
                 </td>
                 <td style="text-align: center">{{item.prix}}€</td>
                 <td>
-                    <select ng-model="$ctrl.choixQuantite" class="form-control">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                    </select>
-
+                    <input type="number" step="1" ng-model="item.nbQuantite" min="1" max="100">
                 </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: right">
+                    Total<br> Promotion -10%<br> Total à payer</td>
+                <td></td>
             </tr>
         </tbody>
     </table>
-
 </section>
