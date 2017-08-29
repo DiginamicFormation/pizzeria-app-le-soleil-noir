@@ -1,7 +1,81 @@
 {
-    "pizzas": [],
+   "pizzas": [
+        {
+            "id": 1,
+            "nom": "4 fromages",
+            "prix": 8,
+            "categorie": "fromage",
+            "ingredients": [
+                "tomate",
+                "fromage",
+                "chèvre",
+                "roquefort"
+            ]
+        },
+        {
+            "id": 2,
+            "nom": "4 saisons",
+            "prix": 9,
+            "categorie": "viande",
+            "ingredients": [
+                "tomate",
+                "fromage"
+            ]
+        },
+        {
+            "id": 3,
+            "nom": "Chorizo",
+            "prix": 10,
+            "categorie": "viande",
+            "ingredients": [
+                "tomate",
+                "fromage"
+            ]
+        },
+        {
+            "id": 4,
+            "nom": "Napolitaine",
+            "prix": 12,
+            "categorie": "poisson",
+            "ingredients": [
+                "tomate",
+                "fromage"
+            ]
+        },
+        {
+            "id": 5,
+            "nom": "Royale",
+            "prix": 12,
+            "categorie": "viande",
+            "ingredients": [
+                "tomate",
+                "fromage"
+            ]
+        },
+        {
+            "id": 6,
+            "nom": "Chèvre miel",
+            "prix": 14,
+            "categorie": "fromage",
+            "ingredients": [
+                "tomate",
+                "fromage"
+            ]
+        },
+        {
+            "id": 7,
+            "nom": "Mozzarella",
+            "prix": 9,
+            "categorie": "fromage",
+            "ingredients": [
+                "tomate",
+                "fromage"
+            ]
+        }
+    ],
     "commandes": [
         {
+            "commande": 1,
             "pizzas": [
                 {
                     "pizzaId": 1,
@@ -15,7 +89,8 @@
             "utilisateursId": 1,
             "typeLivraison": "emporter"
         },
-                {
+        {
+            "commande":2,
             "pizzas": [
                 {
                     "pizzaId": 1,
@@ -30,6 +105,7 @@
             "typeLivraison": "livraison"
         },
                 {
+            "commande" : 3,        
             "pizzas": [
                 {
                     "pizzaId": 3,
@@ -54,4 +130,6 @@
       "adress": "nantes"
     }
   ]
+    
+
 }
