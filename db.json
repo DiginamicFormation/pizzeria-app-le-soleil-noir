@@ -4,6 +4,7 @@
             "id": 1,
             "nom": "4 fromages",
             "prix": 8,
+            "imageUrl": "img/4fromages.jpg",
             "categorie": "fromage",
             "ingredients": [
                 "tomate",
@@ -16,6 +17,7 @@
             "id": 2,
             "nom": "4 saisons",
             "prix": 9,
+            "imageUrl": "img/4saisons.jpg",
             "categorie": "viande",
             "ingredients": [
                 "tomate",
@@ -26,6 +28,7 @@
             "id": 3,
             "nom": "Chorizo",
             "prix": 10,
+            "imageUrl": "img/chorizo.jpg",
             "categorie": "viande",
             "ingredients": [
                 "tomate",
@@ -34,8 +37,9 @@
         },
         {
             "id": 4,
-            "nom": "Napolitaine",
+            "nom": "Calamar",
             "prix": 12,
+            "imageUrl": "img/calamar.jpg",
             "categorie": "poisson",
             "ingredients": [
                 "tomate",
@@ -46,6 +50,7 @@
             "id": 5,
             "nom": "Royale",
             "prix": 12,
+            "imageUrl": "img/royale.jpg",
             "categorie": "viande",
             "ingredients": [
                 "tomate",
@@ -56,6 +61,7 @@
             "id": 6,
             "nom": "Chèvre miel",
             "prix": 14,
+            "imageUrl": "img/chevre-miel.jpg",
             "categorie": "fromage",
             "ingredients": [
                 "tomate",
@@ -66,6 +72,7 @@
             "id": 7,
             "nom": "Mozzarella",
             "prix": 9,
+            "imageUrl": "img/mozzarella.jpg",
             "categorie": "fromage",
             "ingredients": [
                 "tomate",
