@@ -16,6 +16,14 @@ angular.module('pizzeriaApp', ["ngRoute", "ngResource"])
     .component("pizzaComponent", pizzaComponent)
     .constant("apiUrls", apiUrls)
     .service("PizzaService", PizzaService)
+    .filter('capitalize', function() { // https://gist.github.com/paulakreuger/b2af1958f3d67f46447e
+        return function(input) {
+            if (input != null) {
+                input = input.toLowerCase();
+            }
+            return input.substring(0,1).toUpperCase()+input.substring(1);
+        }
+    })
     .config(($routeProvider) => {
         $routeProvider.
             when('/pizzas', {

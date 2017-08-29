@@ -1,16 +1,14 @@
 
 
 <div class="container">
-
     <!-- https://stackoverflow.com/questions/14379934/how-to-filter-a-list-in-angularjs-using-several-links -->
-    <button ng-click="filterCat = null" type="button" class="btn btn-default">Tous</button>
-    <button ng-click="filterCat = {categorie: 'fromage'}" type="button" class="btn btn-default">Fromage</button>
-    <button ng-click="filterCat = {categorie: 'viande'}" type="button" class="btn btn-default">Viande</button>
-    <button ng-click="filterCat = {categorie: 'poisson'}" type="button" class="btn btn-default">Poisson</button>
+    <button ng-click="$ctrl.filterCat = {}" type="button" class="btn btn-default">Toutes</button>
 
-    <br>
+    <button ng-repeat="cat in $ctrl.categories" ng-click="$ctrl.update(cat)" type="button" class="btn btn-default">{{cat | capitalize}}</button>
 
-    <div ng-repeat="pizza in $ctrl.pizzas | filter:filterCat" class="col-md-4 col-sm-6">
+    <br> <br>
+
+    <div ng-repeat="pizza in $ctrl.pizzas | filter:$ctrl.filterCat" class="col-md-4 col-sm-6">
         <div class="thumbnail">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
@@ -19,10 +17,10 @@
             </div>
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-6">
-                    <button ng-click="$ctrl.ajoutPanier()" type="button" class="btn btn-default">Ajouter au panier</button>		
+                    <button ng-click="$ctrl.ajoutPanier()" type="button" class="btn btn-default btn-block">Ajouter au panier</button>		
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-6">
-                    <button ng-click="$ctrl.retirer()" type="button" class="btn btn-default">Retirer</button>			
+                    <button ng-click="$ctrl.retirer()" type="button" class="btn btn-default btn-block">Retirer</button>			
                 </div>
             </div>
         </div>
