@@ -1,4 +1,4 @@
-import templatePizza from "./pizzaVue.html"
+import templatePizza from "./pizza.html"
 import PizzaController from "./pizza.controller"
 
 const pizzaComponent = {

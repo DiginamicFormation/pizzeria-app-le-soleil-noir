@@ -1,11 +1,11 @@
 
 export default class PizzaController {
 
-    constructor(PizzaService) {
+    constructor(PizzaService, panierService) {
         this.PizzaService = PizzaService;
+        this.panierService = panierService;
 
         this.pizzas = this.PizzaService.findAll();
-
         this.categories = this.findAllCategories();
 
     }
@@ -20,4 +20,7 @@ export default class PizzaController {
         return ["fromage", "viande", "poisson"];
     }
     
+    ajoutPanier(pizzaId) {
+        this.panierService.ajoutPanier(pizzaId);
+    }
 }

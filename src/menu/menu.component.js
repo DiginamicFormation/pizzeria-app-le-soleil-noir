@@ -1,9 +1,7 @@
-import templateMenu from "./menuVue.html"
-import MenuController from "./menu.controller"
+import templateMenu from "./menu.html"
 
 const menuComponent = {
-    template: templateMenu,
-    controller: MenuController
+    template: templateMenu
 }
 
 export default menuComponent
