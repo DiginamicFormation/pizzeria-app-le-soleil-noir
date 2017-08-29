@@ -2,70 +2,87 @@
     "pizzas": [
         {
             "id": 1,
-            "nom": "napolitaine",
-            "prix": 10.5,
-            "categorie": "Viande",
+            "nom": "4 fromages",
+            "prix": 8,
+            "imageUrl": "./images/4fromages.jpg",
+            "categorie": "fromage",
             "ingredients": [
-                "tomates",
-                "champignon",
-                "jambon"
+                "tomate",
+                "fromage",
+                "chèvre",
+                "roquefort"
             ]
         },
         {
             "id": 2,
-            "nom": "Fruit de mer",
-            "prix": 13,
-            "categorie": "Poisson",
+            "nom": "4 saisons",
+            "prix": 9,
+            "imageUrl": "./images/4saisons.jpg",
+            "categorie": "viande",
             "ingredients": [
-                "tomates",
-                "moules",
-                "crevettes"
-            ]
-        },
-        {
-            "id": 3,
-            "nom": "4 légumes",
-            "prix": 10,
-            "categorie": "Végétarienne",
-            "ingredients": [
-                "tomates",
+                "tomate",
                 "fromage",
                 "poivron",
-                "champignon",
-                "courgette"
+                "peperonie"
             ]
         },
         {
             "id": 3,
-            "nom": "Hawaïenne",
+            "nom": "Chorizo",
             "prix": 10,
-            "categorie": "Sucré Salé",
+            "imageUrl": "./images/chorizo.jpg",
+            "categorie": "viande",
             "ingredients": [
-                "tomates",
+                "tomate",
                 "fromage",
-                "jambon",
-                "ananas"
+                "chorizo"
             ]
         },
         {
             "id": 4,
-            "nom": "regina",
-            "prix": 12.5,
-            "categorie": "Viande",
+            "nom": "Napolitaine",
+            "prix": 12,
+            "imageUrl": "./images/napolitaine.jpg",
+            "categorie": "poisson",
             "ingredients": [
-                "tomates",
-                "fromage",
-                "olives"
+                "tomate",
+                "fromage"
             ]
         },
         {
             "id": 5,
-            "nom": "4 fromages",
-            "prix": 8,
+            "nom": "Royale",
+            "prix": 12,
+            "imageUrl": "./images/royale.jpg",
+            "categorie": "viande",
+            "ingredients": [
+                "tomate",
+                "fromage",
+                "champignon"
+            ]
+        },
+        {
+            "id": 6,
+            "nom": "Chèvre miel",
+            "prix": 14,
+            "imageUrl": "./images/chevre-miel.jpg",
             "categorie": "fromage",
             "ingredients": [
-                "tomates",
-                "fromage"
+                "tomate",
+                "fromage",
+                "chèvre",
+                "miel"
+            ]
+        },
+        {
+            "id": 7,
+            "nom": "Mozzarella",
+            "prix": 9,
+            "imageUrl": "./images/mozzarella.jpg",
+            "categorie": "fromage",
+            "ingredients": [
+                "tomate",
+                "Mozzarella"
             ]
         }
     ],

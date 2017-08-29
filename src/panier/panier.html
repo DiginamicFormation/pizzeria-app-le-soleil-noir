@@ -1,0 +1,35 @@
+<section id="pizza">
+    <h1>Votre Panier</h1>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th class="col-xs-6" colspan="2"></th>
+                <th class="col-xs-2">Prix</th>
+                <th class="col-xs-2">Quantité</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in $ctrl.pizzaPanier">
+                <td style="width:12%">
+                    <img ng-src="{{item.imageUrl}}" style="width:100%">
+                </td>
+                <td>
+                    <strong>{{item.nom}}</strong><br/>
+                    <strong>Ingrédients : </strong>
+                    <ul ng-repeat="ing in item.ingredients">
+                        <li>{{ing}}</li>
+                    </ul>
+                </td>
+                <td style="text-align: center">{{item.prix}}€</td>
+                <td>
+                    <select ng-model="$ctrl.choixQuantite" class="form-control">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</section>
