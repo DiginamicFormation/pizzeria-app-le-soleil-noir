@@ -8,14 +8,17 @@
         <div class="panel-body">
          
 
-<!--**********************************  -->
-          <div class="col-xs-4">
+<!--*******************container des pizzas ***************  -->
+          <div class="col-xs-4" ng-repeat="item in $ctrl.local track by item.id">
             <div class="panel panel-default" id="produit-1">
               <div class="panel-body text-center">
-                <h3>Pizza1</h3>
-                <img src="https://www.tutti-pizza.com/images/350x270/produit/_/marguerita_marguerita.jpg" alt="" class="img-responsive" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, quam?</p>
-                <span class="prix">2,85 €</span>
+                <h3>{{item.nom}}</h3>
+                <img src="{{item.imageUrl}}" alt="" class="img-responsive" />
+                <ul>
+                <li ng-repeat="ing in item.ingredients"> {{ing}} </li>
+                </ul>
+                <span class="prix">{{item.prix}} €</span><br></br>
+                <span>Quantité :{{item.nbQuantite}}</span>
                 <input type="hidden" id="prix-1" value="2.85" />
               </div>
             </div>
@@ -25,7 +28,8 @@
 
 <!--  -->
     </div>
-    <a href="#!" class="btn btn-block btn-primary add" data-id="1">Modifier</a>
+    
+    <a href="#!/panier" class="btn btn-block btn-primary add" data-id="1">Modifier</a>
 <!-- /*****section 2******** -->
     <div class="ro-xs-4">
       <div class="panel panel-default">

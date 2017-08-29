@@ -10,5 +10,10 @@ findById(id){
     return this.commandeResource.get({commandeId: id })
 }
 
+confirmeCommande(){
+    
+}
+
+
 
 }

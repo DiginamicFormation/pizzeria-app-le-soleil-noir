@@ -4,14 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
     <title>Le Soleil Noir</title>
+    <base href="/">
 </head>
 
 <body ng-app="pizzeriaApp">
-
-    <ng-view></ng-view>
-
     <script src="bundle.js"></script>
+
+    <header-component></header-component>
+    <menu-component></menu-component>
+    <ng-view></ng-view>
+    <footer-component></footer-component>
+
 </body>
 
 </html>

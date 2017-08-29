@@ -4,7 +4,7 @@
             "id": 1,
             "nom": "4 fromages",
             "prix": 8,
-            "imageUrl": "img/4fromages.jpg",
+            "imageUrl": "./img/4fromages.jpg",
             "categorie": "fromage",
             "ingredients": [
                 "tomate",
@@ -17,72 +17,79 @@
             "id": 2,
             "nom": "4 saisons",
             "prix": 9,
-            "imageUrl": "img/4saisons.jpg",
+            "imageUrl": "./img/4saisons.jpg",
             "categorie": "viande",
             "ingredients": [
                 "tomate",
-                "fromage"
+                "fromage",
+                "poivron",
+                "peperonie"
             ]
         },
         {
             "id": 3,
             "nom": "Chorizo",
             "prix": 10,
-            "imageUrl": "img/chorizo.jpg",
+            "imageUrl": "./img/chorizo.jpg",
             "categorie": "viande",
             "ingredients": [
                 "tomate",
-                "fromage"
+                "fromage",
+                "chorizo"
             ]
         },
         {
             "id": 4,
-            "nom": "Calamar",
+            "nom": "Napolitaine",
             "prix": 12,
-            "imageUrl": "img/calamar.jpg",
+            "imageUrl": "./img/napolitaine.jpg",
             "categorie": "poisson",
             "ingredients": [
                 "tomate",
-                "fromage"
+                "fromage",
+                "anchois"
             ]
         },
         {
             "id": 5,
             "nom": "Royale",
             "prix": 12,
-            "imageUrl": "img/royale.jpg",
+            "imageUrl": "./img/royale.jpg",
             "categorie": "viande",
             "ingredients": [
                 "tomate",
-                "fromage"
+                "fromage",
+                "champignon"
             ]
         },
         {
             "id": 6,
             "nom": "Chèvre miel",
             "prix": 14,
-            "imageUrl": "img/chevre-miel.jpg",
+            "imageUrl": "./img/chevre-miel.jpg",
             "categorie": "fromage",
             "ingredients": [
                 "tomate",
-                "fromage"
+                "fromage",
+                "chèvre",
+                "miel"
             ]
         },
         {
             "id": 7,
             "nom": "Mozzarella",
             "prix": 9,
-            "imageUrl": "img/mozzarella.jpg",
+            "imageUrl": "./img/mozzarella.jpg",
             "categorie": "fromage",
             "ingredients": [
                 "tomate",
-                "fromage"
+                "Mozzarella"
             ]
         }
     ],
-    "commandes": [
+        "commandes": [
         {
-            "commande": 1,
+            "commandeId": 1,
             "pizzas": [
                 {
                     "pizzaId": 1,
@@ -97,7 +104,7 @@
             "typeLivraison": "emporter"
         },
         {
-            "commande":2,
+            "commandeId":2,
             "pizzas": [
                 {
                     "pizzaId": 1,
@@ -112,7 +119,7 @@
             "typeLivraison": "livraison"
         },
                 {
-            "commande" : 3,        
+            "commandeId" : 3,        
             "pizzas": [
                 {
                     "pizzaId": 3,
