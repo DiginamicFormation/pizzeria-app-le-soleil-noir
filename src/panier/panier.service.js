@@ -3,6 +3,7 @@ export default class panierService {
     constructor(apiUrls, $http) {
         this.apiUrls = apiUrls;
         this.$http = $http;
+
         this.pizzasList = [];
     }
 
