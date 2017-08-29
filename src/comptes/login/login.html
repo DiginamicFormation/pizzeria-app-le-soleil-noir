@@ -1,0 +1,21 @@
+<section id="login">
+    <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+        <h2>Login</h2>
+        <form name="form" ng-submit="$ctrl.login()" role="form">
+            <div class="form-group" ng-class="{ 'has-error': form.email.$dirty && form.email.$error.required }">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" class="form-control" ng-model="$ctrl.email" required />
+                <span ng-show="form.email.$dirty && form.email.$error.required" class="help-block">Email requis</span>
+            </div>
+            <div class="form-group" ng-class="{ 'has-error': form.motdepasse.$dirty && form.motdepasse.$error.required }">
+                <label for="motdepasse">Mot de passe</label>
+                <input type="password" name="motdepasse" id="motdepasse" class="form-control" ng-model="$ctrl.motdepasse" required />
+                <span ng-show="form.motdepasse.$dirty && form.motdepasse.$error.required" class="help-block">Mot de passe requis</span>
+            </div>
+            <div class="form-actions">
+                <button type="submit" ng-disabled="form.$invalid || dataLoading" class="btn btn-primary">Login</button>
+                <a href="#!/register" class="btn btn-link">S'inscrire</a>
+            </div>
+        </form>
+    </div>
+</section>
