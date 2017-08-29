@@ -1,11 +1,8 @@
 export default class listeCommandeController{
 
 
-constructor(){
-
-
-
-
+constructor(listeCommandeService){
+    this.listeCommandeService =listeCommandeService;
 }
 
 

@@ -1,6 +1,7 @@
 console.log('Bonjour App');
 
 import angular from 'angular'
+import ngResource from 'angular-resource'
 import ngRoute from 'angular-route'
 //template
 import listeCommande from './liste-commande/commande_liste.html'
@@ -15,13 +16,13 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 
 
-angular.module('pizzeriaApp', ['ngRoute'])
+angular.module('pizzeriaApp', ['ngResource','ngRoute'])
 .component('listeCommande', {
     template: listeCommande,
     controller: listeCommandeController
   })
 .service(listeCommandeService.name,listeCommandeService)
-.constant(apiUrls.name,apiUrls)
+.constant('apiUrls',apiUrls)
 .config(($routeProvider) => {
         $routeProvider.
             when('/commande', {
