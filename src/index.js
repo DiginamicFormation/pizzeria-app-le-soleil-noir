@@ -13,10 +13,16 @@ import panierService from './panier/panier.service'
 // import des components
 import pizzaComponent from "./pizzas/pizza.component"
 import panierComponent from "./panier/panier.component"
+import menuComponent from "./menu/menu.component"
+import headerComponent from "./header/header.component"
+import footerComponent from "./footer/footer.component"
 
 angular.module('pizzeriaApp', ["ngRoute", "ngResource"])
     .component("pizzaComponent", pizzaComponent)
     .component('panierCmp', panierComponent)
+    .component('menuComponent', menuComponent)
+    .component('headerComponent', headerComponent)
+    .component('footerComponent', footerComponent)
     .constant("apiUrls", apiUrls)
     .service("PizzaService", PizzaService)
     .service(panierService.name, panierService)

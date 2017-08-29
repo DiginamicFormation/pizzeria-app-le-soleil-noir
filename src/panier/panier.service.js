@@ -3,8 +3,7 @@ export default class panierService {
     constructor(apiUrls, $http) {
         this.apiUrls = apiUrls;
         this.$http = $http;
-        // this.pizzasList = []
-        this.pizzasList = [1, 5, 7, 2, 3]
+        this.pizzasList = [];
     }
 
     findPizzaByPizzaId(pizzaId) {
@@ -12,6 +11,10 @@ export default class panierService {
             .then(response => {
                 return response.data;
             }, response => { });
+    }
+
+    ajoutPanier(pizzaId) {
+        this.pizzasList.push(pizzaId);
     }
 
 }
