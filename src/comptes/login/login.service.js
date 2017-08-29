@@ -4,7 +4,7 @@ export default class LoginService {
     this.$resource = $resource;
     this.compteConnecte;
     this.loginResource = this.$resource(
-      this.apiUrls.utilisateurs + ":compteId",
+      this.apiUrls.user + ":compteId",
       {
         compteId: "@id"
       },

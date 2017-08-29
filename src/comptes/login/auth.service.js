@@ -3,7 +3,7 @@ export default class AuthService {
     this.apiUrls = apiUrls;
     this.$resource = $resource;
     this.loginResource = this.$resource(
-      this.apiUrls.utilisateurs + ":compteId",
+      this.apiUrls.user + ":compteId",
       {
         compteId: "@id"
       },

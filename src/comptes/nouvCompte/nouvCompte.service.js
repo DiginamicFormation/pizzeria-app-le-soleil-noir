@@ -3,7 +3,7 @@ export default class NouvCompteService {
     this.apiUrls = apiUrls;
     this.$resource = $resource;
     this.compteResource = this.$resource(
-      this.apiUrls.utilisateurs + ":compteId",
+      this.apiUrls.user + ":compteId",
       {
         compteId: "@id"
       },
