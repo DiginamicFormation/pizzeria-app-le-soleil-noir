@@ -6,12 +6,7 @@
       "prix": 8,
       "imageUrl": "./img/4fromages.jpg",
       "categorie": "fromage",
-      "ingredients": [
-        "tomate",
-        "fromage",
-        "chèvre",
-        "roquefort"
-      ]
+      "ingredients": ["tomate", "fromage", "chèvre", "roquefort"]
     },
     {
       "id": 2,
@@ -19,12 +14,7 @@
       "prix": 9,
       "imageUrl": "./img/4saisons.jpg",
       "categorie": "viande",
-      "ingredients": [
-        "tomate",
-        "fromage",
-        "poivron",
-        "peperonie"
-      ]
+      "ingredients": ["tomate", "fromage", "poivron", "peperonie"]
     },
     {
       "id": 3,
@@ -32,11 +22,7 @@
       "prix": 10,
       "imageUrl": "./img/chorizo.jpg",
       "categorie": "viande",
-      "ingredients": [
-        "tomate",
-        "fromage",
-        "chorizo"
-      ]
+      "ingredients": ["tomate", "fromage", "chorizo"]
     },
     {
       "id": 4,
@@ -44,11 +30,7 @@
       "prix": 12,
       "imageUrl": "./img/napolitaine.jpg",
       "categorie": "poisson",
-      "ingredients": [
-        "tomate",
-        "fromage",
-        "anchois"
-      ]
+      "ingredients": ["tomate", "fromage", "anchois"]
     },
     {
       "id": 5,
@@ -56,11 +38,7 @@
       "prix": 12,
       "imageUrl": "./img/royale.jpg",
       "categorie": "viande",
-      "ingredients": [
-        "tomate",
-        "fromage",
-        "champignon"
-      ]
+      "ingredients": ["tomate", "fromage", "champignon"]
     },
     {
       "id": 6,
@@ -68,12 +46,7 @@
       "prix": 14,
       "imageUrl": "./img/chevre-miel.jpg",
       "categorie": "fromage",
-      "ingredients": [
-        "tomate",
-        "fromage",
-        "chèvre",
-        "miel"
-      ]
+      "ingredients": ["tomate", "fromage", "chèvre", "miel"]
     },
     {
       "id": 7,
@@ -81,21 +54,20 @@
       "prix": 9,
       "imageUrl": "./img/mozzarella.jpg",
       "categorie": "fromage",
-      "ingredients": [
-        "tomate",
-        "Mozzarella"
-      ]
+      "ingredients": ["tomate", "Mozzarella"]
     }
   ],
-  "commandes": [],
+  "commandes": [
+    
+  ],
   "utilisateurs": [
     {
+      "id": 1,
       "nom": "kuntz",
       "prenom": "thomas",
       "email": "test@web.com",
       "motdepasse": "test",
-      "adresse": "nantes",
-      "id": 1
+      "adresse": "nantes"
     },
     {
       "nom": "test",

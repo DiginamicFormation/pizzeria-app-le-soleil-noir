@@ -1,16 +1,22 @@
-// import général
+console.log("Bonjour App");
+
 import "bootstrap/dist/css/bootstrap.css";
 import angular from "angular";
-import ngRoute from "angular-route";
 import ngResource from "angular-resource";
+import ngRoute from "angular-route";
 import "angular-ui-bootstrap";
-
-// import des services
-import apiUrls from "./utils/apiUrls.service";
+//template
+import listeCommande from "./liste-commande/commande_liste.html";
+//controler
+import listeCommandeController from "./liste-commande/listeCommandeController";
+//service
+import listeCommandeService from "./liste-commande/listeCommandeService";
 import PizzaService from "./pizzas/pizza.service";
 import panierService from "./panier/panier.service";
 import LoginService from "./comptes/login/login.service";
 import NouvCompteService from "./comptes/nouvCompte/nouvCompte.service";
+// constant
+import apiUrls from "./utils/apiUrls.service.js";
 
 // import des components
 import pizzaComponent from "./pizzas/pizza.component";
@@ -22,7 +28,6 @@ import LoginCmp from "./comptes/login/login.component";
 import NouvCompteCmp from "./comptes/nouvCompte/nouvCompte.component";
 
 angular
-  .module("pizzeriaApp", ["ngRoute", "ngResource"])
   .component("pizzaComponent", pizzaComponent)
   .component("panierCmp", panierComponent)
   .component("menuComponent", menuComponent)
@@ -30,11 +35,13 @@ angular
   .component("footerComponent", footerComponent)
   .component("loginCmp", LoginCmp)
   .component("nouvCompteCmp", NouvCompteCmp)
-  .constant("apiUrls", apiUrls)
   .service("LoginService", LoginService)
+  .service("AuthService", AuthService)
   .service("NouvCompteService", NouvCompteService)
-  .service("PizzaService", PizzaService)
+  .service(listeCommandeService.name, listeCommandeService)
   .service(panierService.name, panierService)
+  .service("PizzaService", PizzaService)
+  .constant("apiUrls", apiUrls)
   .filter("capitalize", function() {
     // https://gist.github.com/paulakreuger/b2af1958f3d67f46447e
     return function(input) {
@@ -49,6 +56,9 @@ angular
       .when("/pizzas", {
         template: "<pizza-component></pizza-component>"
       })
+      .when("/commande", {
+        template: "<liste-commande></liste-commande>"
+      })
       .when("/panier", {
         template: "<panier-cmp></panier-cmp>"
       })
@@ -61,6 +71,6 @@ angular
         publicAccess: true
       })
       .otherwise({
-        redirectTo: "/login"
+        redirectTo: "/pizzas"
       });
   });
