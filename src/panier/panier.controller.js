@@ -10,12 +10,11 @@ export default class panierCtrl {
         // localStorage.removeItem('panierSave');
         if (localStorage.getItem('panierSave') == null) {
             console.log(this.panierService.pizzasList)
-            this.panierService.pizzasList.forEach((idPizza, quantite) => {
+            this.panierService.pizzasList.forEach((idPizza) => {
                 this.panierService.findPizzaByPizzaId(idPizza)
                     .then(pizza => {
 
-                        if (quantite == 0) pizza.nbQuantite = 1
-                        else pizza.nbQuantite = quantite
+                        pizza.nbQuantite = 1
 
                         this.pizzaPanier.push(pizza)
                         this.save()
