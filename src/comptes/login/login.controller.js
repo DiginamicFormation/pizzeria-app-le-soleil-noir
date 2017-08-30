@@ -9,7 +9,7 @@ export default class LoginCtrl {
     this.LoginService.login(this.email, this.motdepasse, response => {
       if (response.success) {
         console.log("success");
-        $location.path("/#!/pizzas");
+        this.$location.path("/#!/pizzas");
       } else {
         $scope.error = response.message;
       }

@@ -29,34 +29,34 @@ import LoginCmp from "./comptes/login/login.component";
 import NouvCompteCmp from "./comptes/nouvCompte/nouvCompte.component";
 
 
-angular.module('pizzeriaApp', ['ngRoute','ngResource'])
-.component('listeCommande', {
+angular.module('pizzeriaApp', ['ngRoute', 'ngResource'])
+  .component('listeCommande', {
     template: listeCommande,
     controller: listeCommandeController
   })
-.component("pizzaComponent", pizzaComponent)
-.component('panierCmp', panierComponent)
-.component('menuComponent', menuComponent)
-.component('headerComponent', headerComponent)
-.component('footerComponent', footerComponent)
-.component("loginCmp", LoginCmp)
-.component("nouvCompteCmp", NouvCompteCmp)
-.service("LoginService", LoginService)
-.service("AuthService", AuthService)
-.service("NouvCompteService", NouvCompteService)
-.service(listeCommandeService.name,listeCommandeService)
-.service(panierService.name, panierService)
-.service("PizzaService", PizzaService)
-.constant('apiUrls',apiUrls)
-.filter('capitalize', function() { // https://gist.github.com/paulakreuger/b2af1958f3d67f46447e
-        return function(input) {
-            if (input != null) {
-                input = input.toLowerCase();
-            }
-            return input.substring(0, 1).toUpperCase() + input.substring(1);
-        }
-    })
-.config($routeProvider => {
+  .component("pizzaComponent", pizzaComponent)
+  .component('panierCmp', panierComponent)
+  .component('menuComponent', menuComponent)
+  .component('headerComponent', headerComponent)
+  .component('footerComponent', footerComponent)
+  .component("loginCmp", LoginCmp)
+  .component("nouvCompteCmp", NouvCompteCmp)
+  .service("LoginService", LoginService)
+  .service("AuthService", AuthService)
+  .service("NouvCompteService", NouvCompteService)
+  .service(listeCommandeService.name, listeCommandeService)
+  .service(panierService.name, panierService)
+  .service("PizzaService", PizzaService)
+  .constant('apiUrls', apiUrls)
+  .filter('capitalize', function () { // https://gist.github.com/paulakreuger/b2af1958f3d67f46447e
+    return function (input) {
+      if (input != null) {
+        input = input.toLowerCase();
+      }
+      return input.substring(0, 1).toUpperCase() + input.substring(1);
+    }
+  })
+  .config($routeProvider => {
     $routeProvider
       .when("/pizzas", {
         template: "<pizza-component></pizza-component>"
@@ -76,6 +76,6 @@ angular.module('pizzeriaApp', ['ngRoute','ngResource'])
         publicAccess: true
       })
       .otherwise({
-        redirectTo: "/commande"
+        redirectTo: "/pizzas"
       });
   });

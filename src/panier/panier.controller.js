@@ -10,31 +10,19 @@ export default class panierCtrl {
         this.promotion = 0
         this.active = 0
         // localStorage.removeItem('panierSave');
-        if (localStorage.getItem('panierSave') == null) {
-            // console.log(this.panierService.pizzasList)
-            // this.panierService.pizzasList.forEach((pizzas) => {
-            //     this.panierService.findPizzaByPizzaId(pizzas.id)
-            //         .then(pizza => {
-
-            //             if (pizzas.quantite == 0) pizza.nbQuantite = 1
-            //             else pizza.nbQuantite = pizzas.quantite
-
-            //             this.pizzaPanier.push(pizza)
-            //             this.save()
-            //         })
-            // });
-
+        if (localStorage.getItem('panierSave') == null || this.panierService.pizzasList.length != this.pizzaPanier.length) {
             console.log(this.panierService.pizzasList)
-            this.panierService.pizzasList.forEach((idpizza) => {
-                this.panierService.findPizzaByPizzaId(idpizza)
+            this.panierService.pizzasList.forEach((pizzas) => {
+                this.panierService.findPizzaByPizzaId(pizzas.id)
                     .then(pizza => {
-                        pizza.nbQuantite = 1
+
+                        if (pizzas.quantite == 0) pizza.nbQuantite = 1
+                        else pizza.nbQuantite = pizzas.quantite
+
                         this.pizzaPanier.push(pizza)
                         this.save()
                     })
             });
-
-
         } else {
             this.pizzaPanier = JSON.parse(localStorage['panierSave'])
             this.total()
