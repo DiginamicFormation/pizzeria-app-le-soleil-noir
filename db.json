@@ -146,6 +146,55 @@
       ],
       "utilisateursId": 1,
       "id": 4
+    },
+    {
+      "pizzas": [
+        {
+          "pizzaId": 1,
+          "quantite": 1
+        },
+        {
+          "pizzaId": 4,
+          "quantite": 1
+        },
+        {
+          "pizzaId": 4,
+          "quantite": 2
+        },
+        {
+          "pizzaId": 7,
+          "quantite": 3
+        },
+        {
+          "pizzaId": 7,
+          "quantite": 4
+        },
+        {
+          "pizzaId": 7,
+          "quantite": 5
+        },
+        {
+          "pizzaId": 5,
+          "quantite": 6
+        },
+        {
+          "pizzaId": 5,
+          "quantite": 7
+        }
+      ],
+      "utilisateursId": 1,
+      "id": 5
+    },
+    {
+      "pizzas": [
+        {
+          "pizzaId": 1,
+          "quantite": 1
+        }
+      ],
+      "utilisateursId": 1,
+      "typelivraison": "livraison",
+      "id": 6
     }
   ],
   "utilisateurs": [
@@ -155,7 +204,15 @@
       "prenom": "thomas",
       "email": "test@web.com",
       "motdepasse": "test",
-      "adress": "nantes"
+      "adresse": "nantes"
+    },
+    {
+      "nom": "test",
+      "prenom": "test",
+      "email": "test@test.com",
+      "motdepasse": "test",
+      "adresse": "test",
+      "id": 2
     }
   ]
 }

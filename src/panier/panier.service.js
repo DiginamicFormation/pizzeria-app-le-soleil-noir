@@ -1,8 +1,9 @@
 export default class panierService {
 
-    constructor(apiUrls, $http) {
+    constructor(apiUrls, $http, $rootScope) {
         this.apiUrls = apiUrls;
         this.$http = $http;
+        this.$rootScope = $rootScope;
         this.pizzasList = [];
     }
 
@@ -15,6 +16,21 @@ export default class panierService {
 
     ajoutPanier(pizzaId) {
         this.pizzasList.push(pizzaId);
+        this.$rootScope.$emit('ajoutPanier', pizzaId);
+    }
+
+    retirerPanier(pizzaId) {
+        if(pizzaId > -1) {
+            this.pizzasList.splice(pizzaId, 1);
+        }
+    }
+
+    nbPizzasPanier() {
+        return this.pizzasList.length;
+    }
+
+    getPizzasList() {
+        return this.pizzasList;
     }
 
 }

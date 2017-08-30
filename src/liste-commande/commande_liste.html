@@ -36,10 +36,11 @@
         <div class="panel-heading">Où voulez vous manger ? </div>
         <div class="panel-body text-left">
         
-          
-            <a href="#" ng-click="$ctrl.emporter()" class="btn btn-success btn-block" >Emporter</a>
-            <a href="#" ng-click="$ctrl.livraison()" class="btn btn-success btn-block" >Livraison </a>
-            <a href="#" ng-click="$ctrl.save()" class="btn btn-success btn-block" >Confirmer commande</a>
+
+          <img ng-style="$ctrl.myStyleEmporter" class="col-xs-offset-1"  width="25%" src='./img/emporter-logo.png' ng-click="$ctrl.emporter() ">
+          <img ng-style="$ctrl.myStyleLivraison" class="col-xs-offset-3"  width="25%" src='./img/livraison-logo.jpg' ng-click="$ctrl.livraison() ">  
+
+            <button href="#" ng-disabled="$ctrl.typelivraison==undefined" ng-click="$ctrl.save()" class="btn btn-success btn-block" >Confirmer commande</button>
     </div>
     
   </div>

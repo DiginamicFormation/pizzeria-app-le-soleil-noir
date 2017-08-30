@@ -18,10 +18,26 @@ save(){
 }
 
 emporter(){
-    this.typelivraison ="emporter"
+    if(this.myStyleEmporter == undefined){
+        this.myStyleEmporter={border: 'solid 2px blue'}
+        this.typelivraison ="emporter"
+        this.myStyleLivraison=undefined
+    }else{
+        this.myStyleEmporter=undefined
+        this.selection = undefined
+    }
+    
 }
 livraison(){
-    this.typelivraison ="livraison"
+    if(this.myStyleLivraison == undefined){
+        this.myStyleLivraison= {border: 'solid 2px blue'}
+        this.typelivraison = "livraison"
+        this.myStyleEmporter=undefined
+        console.log(this.myStyleLivraison)
+    }else{
+        this.myStyleLivraison=undefined
+        this.selection = undefined
+    }
 }
 
 }
