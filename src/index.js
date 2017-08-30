@@ -10,7 +10,6 @@ import apiUrls from "./utils/apiUrls.service";
 import PizzaService from "./pizzas/pizza.service";
 import panierService from "./panier/panier.service";
 import LoginService from "./comptes/login/login.service";
-import AuthService from "./comptes/login/auth.service";
 import NouvCompteService from "./comptes/nouvCompte/nouvCompte.service";
 
 // import des components
@@ -33,7 +32,6 @@ angular
   .component("nouvCompteCmp", NouvCompteCmp)
   .constant("apiUrls", apiUrls)
   .service("LoginService", LoginService)
-  .service("AuthService", AuthService)
   .service("NouvCompteService", NouvCompteService)
   .service("PizzaService", PizzaService)
   .service(panierService.name, panierService)

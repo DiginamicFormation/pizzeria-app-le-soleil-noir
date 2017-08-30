@@ -1,7 +1,8 @@
 export default class NouvCompteService {
-  constructor(apiUrls, $resource) {
+  constructor(apiUrls, $resource, $location) {
     this.apiUrls = apiUrls;
     this.$resource = $resource;
+    this.$location = this.$location;
     this.compteResource = this.$resource(
       this.apiUrls.user + ":compteId",
       {
@@ -27,7 +28,8 @@ export default class NouvCompteService {
       motdepasse: motdepasse,
       adresse: adresse
     };
-    
+    sessionStorage.setItem("compteConnecte", JSON.stringify(this.nouvCompte));
     this.compteResource.save(nouvCompte);
+    this.$location.path("/pizzas");
   }
 }
