@@ -7,7 +7,7 @@ import ngRoute from "angular-route";
 import "angular-ui-bootstrap";
 //template
 import listeCommande from "./liste-commande/commande_liste.html";
-//controler
+//controller
 import listeCommandeController from "./liste-commande/listeCommandeController";
 //service
 import listeCommandeService from "./liste-commande/listeCommandeService";
@@ -41,7 +41,6 @@ angular.module('pizzeriaApp', ['ngRoute', 'ngResource'])
   .component("loginCmp", LoginCmp)
   .component("nouvCompteCmp", NouvCompteCmp)
   .service("LoginService", LoginService)
-  .service("AuthService", AuthService)
   .service("NouvCompteService", NouvCompteService)
   .service(listeCommandeService.name, listeCommandeService)
   .service(panierService.name, panierService)
