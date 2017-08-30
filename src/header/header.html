@@ -3,5 +3,8 @@
 
 <span style="float: right;margin: 40px">
     <a style="margin: 20px" href="#!/panier">Panier ({{$ctrl.nbPizzas}})</a>
-    <a href="#!/login">Se connecter</a>
+
+    <a ng-if=!$ctrl.estConnecte href="#!/login">Se connecter</a>
+    <a ng-if=$ctrl.estConnecte href="#!/#">{{$ctrl.utilisateur.nom}}</a>
+
 </span>

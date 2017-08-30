@@ -44,6 +44,7 @@ export default class PizzaController {
     }
 
     nbPizzasPanierById(pizzaId) {
-        return this.panierService.getPizzasList().filter(p => p.id == pizzaId).length;
+        let p = this.panierService.getPizzasList().find(p => p.id == pizzaId);
+        return p != null ? p.quantite : "";
     }
 }

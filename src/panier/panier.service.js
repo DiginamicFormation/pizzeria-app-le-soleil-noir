@@ -15,7 +15,15 @@ export default class panierService {
     }
 
     ajoutPanier(pizzaId) {
-        this.pizzasList.push(pizzaId);
+
+        let p = this.pizzasList.find(p => p.id == pizzaId);
+
+        if(p) {
+            p.quantite++;
+        } else {
+            this.pizzasList.push({"id": pizzaId, "quantite": 1})
+        }
+
         this.$rootScope.$emit('ajoutPanier', pizzaId);
     }
 
@@ -26,7 +34,8 @@ export default class panierService {
     }
 
     nbPizzasPanier() {
-        return this.pizzasList.length;
+        return this.pizzasList.map(p => p.quantite)
+                              .reduce((sum, q) => sum + q);
     }
 
     getPizzasList() {
