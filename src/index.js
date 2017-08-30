@@ -76,6 +76,6 @@ angular.module('pizzeriaApp', ['ngRoute','ngResource'])
         publicAccess: true
       })
       .otherwise({
-        redirectTo: "/commande"
+        redirectTo: "/pizzas"
       });
   });
