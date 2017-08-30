@@ -10,16 +10,15 @@
 
 <!--*******************container des pizzas ***************  -->
           <div class="col-xs-4" ng-repeat="item in $ctrl.local track by item.id">
-            <div class="panel panel-default" id="produit-1">
+            <div class="panel panel-default" >
               <div class="panel-body text-center">
                 <h3>{{item.nom}}</h3>
-                <img src="{{item.imageUrl}}" alt="" class="img-responsive" />
+                <img ng-scr="{{item.imageUrl}}"  class="img-responsive" />
                 <ul>
                 <li ng-repeat="ing in item.ingredients"> {{ing}} </li>
                 </ul>
                 <span class="prix">{{item.prix}} €</span><br></br>
                 <span>Quantité :{{item.nbQuantite}}</span>
-                <input type="hidden" id="prix-1" value="2.85" />
               </div>
             </div>
           </div>
@@ -40,7 +39,7 @@
           <img ng-style="$ctrl.myStyleEmporter" class="col-xs-offset-1"  width="25%" src='./img/emporter-logo.png' ng-click="$ctrl.emporter() ">
           <img ng-style="$ctrl.myStyleLivraison" class="col-xs-offset-3"  width="25%" src='./img/livraison-logo.jpg' ng-click="$ctrl.livraison() ">  
 
-            <button href="#" ng-disabled="$ctrl.typelivraison==undefined" ng-click="$ctrl.save()" class="btn btn-success btn-block" >Confirmer commande</button>
+            <button  ng-disabled="$ctrl.typelivraison==undefined" ng-click="$ctrl.save()" class="btn btn-success btn-block" >Confirmer commande</button>
     </div>
     
   </div>

@@ -1,20 +1,24 @@
 export default class ListeCommandeController{
 
 
-constructor(ListeCommandeService,PizzaService,){
+constructor(ListeCommandeService,PizzaService,$location){
     this.listeCommandeService =ListeCommandeService;
     this.pizzaService= PizzaService;
-    this.local = JSON.parse(localStorage.getItem('panierSave'))    
+    this.local = JSON.parse(localStorage.getItem('panierSave'))
+    this.$location = $location ; 
+    console.log(this.local)
 }
 
 save(){
-    let commande = { pizzas:[], utilisateursId:1, typelivraison:this.typelivraison}
+    this.user = JSON.parse(sessionStorage.getItem('compteConnecte'))
+    let commande = { pizzas:[], utilisateursId: this.user.id, typelivraison:this.typelivraison}
     this.local.forEach(p => commande.pizzas.push({
         pizzaId: p.id,
         quantite: p.nbQuantite
     }))
     
     this.listeCommandeService.confirmeCommande(commande);
+    this.$location.path("/pizzas");
 }
 
 emporter(){

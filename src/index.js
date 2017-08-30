@@ -5,8 +5,7 @@ import angular from 'angular'
 import ngResource from 'angular-resource'
 import ngRoute from 'angular-route'
 import 'angular-ui-bootstrap'
-//template
-import listeCommande from './liste-commande/commande_liste.html'
+
 //controler
 import listeCommandeController from './liste-commande/listeCommandeController'
 //service
@@ -27,13 +26,10 @@ import headerComponent from "./header/header.component";
 import footerComponent from "./footer/footer.component";
 import LoginCmp from "./comptes/login/login.component";
 import NouvCompteCmp from "./comptes/nouvCompte/nouvCompte.component";
-
+import listeCommande from './liste-commande/listeCommande.component';
 
 angular.module('pizzeriaApp', ['ngRoute','ngResource'])
-.component('listeCommande', {
-    template: listeCommande,
-    controller: listeCommandeController
-  })
+.component('listeCommande', listeCommande)
 .component("pizzaComponent", pizzaComponent)
 .component('panierCmp', panierComponent)
 .component('menuComponent', menuComponent)
