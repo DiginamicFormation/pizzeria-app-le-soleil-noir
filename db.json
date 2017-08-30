@@ -6,12 +6,7 @@
       "prix": 8,
       "imageUrl": "./img/4fromages.jpg",
       "categorie": "fromage",
-      "ingredients": [
-        "tomate",
-        "fromage",
-        "chèvre",
-        "roquefort"
-      ]
+      "ingredients": ["tomate", "fromage", "chèvre", "roquefort"]
     },
     {
       "id": 2,
@@ -19,12 +14,7 @@
       "prix": 9,
       "imageUrl": "./img/4saisons.jpg",
       "categorie": "viande",
-      "ingredients": [
-        "tomate",
-        "fromage",
-        "poivron",
-        "peperonie"
-      ]
+      "ingredients": ["tomate", "fromage", "poivron", "peperonie"]
     },
     {
       "id": 3,
@@ -32,11 +22,7 @@
       "prix": 10,
       "imageUrl": "./img/chorizo.jpg",
       "categorie": "viande",
-      "ingredients": [
-        "tomate",
-        "fromage",
-        "chorizo"
-      ]
+      "ingredients": ["tomate", "fromage", "chorizo"]
     },
     {
       "id": 4,
@@ -44,11 +30,7 @@
       "prix": 12,
       "imageUrl": "./img/napolitaine.jpg",
       "categorie": "poisson",
-      "ingredients": [
-        "tomate",
-        "fromage",
-        "anchois"
-      ]
+      "ingredients": ["tomate", "fromage", "anchois"]
     },
     {
       "id": 5,
@@ -56,11 +38,7 @@
       "prix": 12,
       "imageUrl": "./img/royale.jpg",
       "categorie": "viande",
-      "ingredients": [
-        "tomate",
-        "fromage",
-        "champignon"
-      ]
+      "ingredients": ["tomate", "fromage", "champignon"]
     },
     {
       "id": 6,
@@ -68,12 +46,7 @@
       "prix": 14,
       "imageUrl": "./img/chevre-miel.jpg",
       "categorie": "fromage",
-      "ingredients": [
-        "tomate",
-        "fromage",
-        "chèvre",
-        "miel"
-      ]
+      "ingredients": ["tomate", "fromage", "chèvre", "miel"]
     },
     {
       "id": 7,
@@ -81,501 +54,11 @@
       "prix": 9,
       "imageUrl": "./img/mozzarella.jpg",
       "categorie": "fromage",
-      "ingredients": [
-        "tomate",
-        "Mozzarella"
-      ]
+      "ingredients": ["tomate", "Mozzarella"]
     }
   ],
   "commandes": [
-    {
-      "id": 1,
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 3
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 4
-        }
-      ],
-      "utilisateursId": 1,
-      "typeLivraison": "emporter"
-    },
-    {
-      "id": 2,
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 3
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 4
-        }
-      ],
-      "utilisateursId": 2,
-      "typeLivraison": "livraison"
-    },
-    {
-      "id": 3,
-      "pizzas": [
-        {
-          "pizzaId": 3,
-          "quantite": 2
-        },
-        {
-          "pizzaId": 4,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 3,
-      "typeLivraison": "emporter"
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "id": 4
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 4,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 4,
-          "quantite": 2
-        },
-        {
-          "pizzaId": 7,
-          "quantite": 3
-        },
-        {
-          "pizzaId": 7,
-          "quantite": 4
-        },
-        {
-          "pizzaId": 7,
-          "quantite": 5
-        },
-        {
-          "pizzaId": 5,
-          "quantite": 6
-        },
-        {
-          "pizzaId": 5,
-          "quantite": 7
-        }
-      ],
-      "utilisateursId": 1,
-      "id": 5
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "typelivraison": "livraison",
-      "id": 6
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 3,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "typelivraison": "emporter",
-      "id": 7
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 3,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "typelivraison": "emporter",
-      "id": 8
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 3,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "typelivraison": "emporter",
-      "id": 9
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 3,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "typelivraison": "emporter",
-      "id": 10
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 3,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "typelivraison": "emporter",
-      "id": 11
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 3,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "typelivraison": "emporter",
-      "id": 12
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 3,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "typelivraison": "emporter",
-      "id": 13
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 3,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "typelivraison": "livraison",
-      "id": 14
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 3,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "typelivraison": "livraison",
-      "id": 15
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 3,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "typelivraison": "livraison",
-      "id": 16
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 3,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "typelivraison": "livraison",
-      "id": 17
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 3,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "typelivraison": "livraison",
-      "id": 18
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 3,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "typelivraison": "livraison",
-      "id": 19
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 3,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "typelivraison": "livraison",
-      "id": 20
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 3,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "typelivraison": "livraison",
-      "id": 21
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 3,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "typelivraison": "livraison",
-      "id": 22
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 3,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "typelivraison": "livraison",
-      "id": 23
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 3,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "typelivraison": "livraison",
-      "id": 24
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 3,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "typelivraison": "livraison",
-      "id": 25
-    },
-    {
-      "pizzas": [
-        {
-          "pizzaId": 1,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 2,
-          "quantite": 1
-        },
-        {
-          "pizzaId": 3,
-          "quantite": 1
-        }
-      ],
-      "utilisateursId": 1,
-      "typelivraison": "livraison",
-      "id": 26
-    }
+    
   ],
   "utilisateurs": [
     {
@@ -597,7 +80,7 @@
     {
       "nom": "test",
       "prenom": "test",
-      "email": "pierre.antoine.martin.pro@gmail.com",
+      "email": "test@test.fr",
       "motdepasse": "test",
       "adresse": "test",
       "id": 3

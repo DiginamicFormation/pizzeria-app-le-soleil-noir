@@ -1,23 +1,22 @@
-console.log('Bonjour App');
+console.log("Bonjour App");
 
-import 'bootstrap/dist/css/bootstrap.css'
-import angular from 'angular'
-import ngResource from 'angular-resource'
-import ngRoute from 'angular-route'
-import 'angular-ui-bootstrap'
+import "bootstrap/dist/css/bootstrap.css";
+import angular from "angular";
+import ngResource from "angular-resource";
+import ngRoute from "angular-route";
+import "angular-ui-bootstrap";
 //template
-import listeCommande from './liste-commande/commande_liste.html'
+import listeCommande from "./liste-commande/commande_liste.html";
 //controler
-import listeCommandeController from './liste-commande/listeCommandeController'
+import listeCommandeController from "./liste-commande/listeCommandeController";
 //service
-import listeCommandeService from './liste-commande/listeCommandeService'
-import PizzaService from "./pizzas/pizza.service"
-import panierService from './panier/panier.service'
+import listeCommandeService from "./liste-commande/listeCommandeService";
+import PizzaService from "./pizzas/pizza.service";
+import panierService from "./panier/panier.service";
 import LoginService from "./comptes/login/login.service";
-import AuthService from "./comptes/login/auth.service";
 import NouvCompteService from "./comptes/nouvCompte/nouvCompte.service";
 // constant
-import apiUrls from './utils/apiUrls.service.js'
+import apiUrls from "./utils/apiUrls.service.js";
 
 // import des components
 import pizzaComponent from "./pizzas/pizza.component";

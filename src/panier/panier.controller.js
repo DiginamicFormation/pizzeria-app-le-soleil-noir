@@ -39,13 +39,19 @@ export default class panierCtrl {
         let pizzaList = JSON.parse(localStorage['panierSave'])
         this.pizzaPanier = []
         pizzaList.filter(pizza => {
-            // console.log(pizzaList.lenght)
-            if (pizza.id != item.id) {
-                // console.log(pizza.id + ' je reste')
-                this.pizzaPanier.push(pizza)
-                this.save()
+            console.log(pizza.id)
+            console.log(item.id)
+            if (pizzaList.length <= 1) {
+                localStorage.removeItem('panierSave');
+                this.pizzaPanier = []
+                this.total()
             }
-            // else console.log(pizza.id + ' au revoir')
+            else {
+                if (pizza.id != item.id) {
+                    this.pizzaPanier.push(pizza)
+                    this.save()
+                }
+            }
         })
     }
 
@@ -60,13 +66,19 @@ export default class panierCtrl {
     }
 
     total() {
-        this.listPizza = JSON.parse(localStorage['panierSave'])
-        this.totalPanier = 0
-        this.listPizza.forEach(pizza => {
-            this.totalPanier += pizza.prix * pizza.nbQuantite
-        });
-        if (this.active == 1) {
-            this.promo()
+        if (localStorage.getItem('panierSave') == null) {
+            this.totalPanier = 0
+            this.promotion = 0
+        }
+        else {
+            this.listPizza = JSON.parse(localStorage['panierSave'])
+            this.totalPanier = 0
+            this.listPizza.forEach(pizza => {
+                this.totalPanier += pizza.prix * pizza.nbQuantite
+            });
+            if (this.active == 1) {
+                this.promo()
+            }
         }
         this.totalAPayer()
     }

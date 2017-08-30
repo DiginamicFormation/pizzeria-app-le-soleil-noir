@@ -34,6 +34,7 @@ export default class LoginService {
             "compteConnecte",
             JSON.stringify(this.compteConnecte)
           );
+          return Promise;
         }
       });
     });

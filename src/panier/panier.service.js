@@ -4,7 +4,14 @@ export default class panierService {
         this.apiUrls = apiUrls;
         this.$http = $http;
         this.$rootScope = $rootScope;
-        this.pizzasList = [];
+        this.pizzasList = [{
+            "id":1,
+            "quantite":5
+        },
+        {
+            "id":3,
+            "quantite":7
+        }];
     }
 
     findPizzaByPizzaId(pizzaId) {
