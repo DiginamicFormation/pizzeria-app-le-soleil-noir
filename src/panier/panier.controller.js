@@ -7,20 +7,34 @@ export default class panierCtrl {
     }
 
     $onInit() {
+        this.promotion = 0
+        this.active = 0
         // localStorage.removeItem('panierSave');
         if (localStorage.getItem('panierSave') == null) {
+            // console.log(this.panierService.pizzasList)
+            // this.panierService.pizzasList.forEach((pizzas) => {
+            //     this.panierService.findPizzaByPizzaId(pizzas.id)
+            //         .then(pizza => {
+
+            //             if (pizzas.quantite == 0) pizza.nbQuantite = 1
+            //             else pizza.nbQuantite = pizzas.quantite
+
+            //             this.pizzaPanier.push(pizza)
+            //             this.save()
+            //         })
+            // });
+
             console.log(this.panierService.pizzasList)
-            this.panierService.pizzasList.forEach((idPizza, quantite) => {
-                this.panierService.findPizzaByPizzaId(idPizza)
+            this.panierService.pizzasList.forEach((idpizza) => {
+                this.panierService.findPizzaByPizzaId(idpizza)
                     .then(pizza => {
-
-                        if (quantite == 0) pizza.nbQuantite = 1
-                        else pizza.nbQuantite = quantite
-
+                        pizza.nbQuantite = 1
                         this.pizzaPanier.push(pizza)
                         this.save()
                     })
             });
+
+
         } else {
             this.pizzaPanier = JSON.parse(localStorage['panierSave'])
             this.total()
@@ -33,8 +47,18 @@ export default class panierCtrl {
         this.total()
     }
 
-    suppr(item){
-        // this.panierService.pizzasList
+    suppr(item) {
+        let pizzaList = JSON.parse(localStorage['panierSave'])
+        this.pizzaPanier = []
+        pizzaList.filter(pizza => {
+            // console.log(pizzaList.lenght)
+            if (pizza.id != item.id) {
+                // console.log(pizza.id + ' je reste')
+                this.pizzaPanier.push(pizza)
+                this.save()
+            }
+            // else console.log(pizza.id + ' au revoir')
+        })
     }
 
     plus(item) {
@@ -53,6 +77,27 @@ export default class panierCtrl {
         this.listPizza.forEach(pizza => {
             this.totalPanier += pizza.prix * pizza.nbQuantite
         });
+        if (this.active == 1) {
+            this.promo()
+        }
+        this.totalAPayer()
+    }
+
+    promo() {
+        if (this.code != null || this.code != '') {
+            this.promotion = this.totalPanier / 10
+            this.totalAPayer()
+            this.active = 1
+        }
+        else {
+            this.promotion = 0
+            this.totalAPayer()
+            this.active = 0
+        }
+    }
+
+    totalAPayer() {
+        this.totalPayer = this.totalPanier - this.promotion
     }
 
 }
