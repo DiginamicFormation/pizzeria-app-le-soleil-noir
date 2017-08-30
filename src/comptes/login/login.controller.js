@@ -8,7 +8,8 @@ export default class LoginCtrl {
   login() {
     this.LoginService.login(this.email, this.motdepasse, response => {
       if (response.success) {
-        $location.path("/accueil");
+        console.log("success");
+        $location.path("/#!/pizzas");
       } else {
         $scope.error = response.message;
       }

@@ -21,10 +21,7 @@ export default class LoginService {
   }
 
   isAuthenticated() {
-    localStorage.setItem("compteConnecte", JSON.stringify(this.compteConnecte));
-    let test = localStorage.getItem("compteConnecte");
-    console.log(test);
-    return true;
+    return sessionStorage.getItem("compteConnecte") != null;
   }
 
   login(email, motdepasse) {
@@ -33,7 +30,10 @@ export default class LoginService {
       this.comptes.forEach(compte => {
         if (compte.email === email && compte.motdepasse === motdepasse) {
           this.compteConnecte = compte;
-          this.isAuthenticated();
+          sessionStorage.setItem(
+            "compteConnecte",
+            JSON.stringify(this.compteConnecte)
+          );
         }
       });
     });
