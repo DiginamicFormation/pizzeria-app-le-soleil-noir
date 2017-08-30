@@ -24,16 +24,26 @@
                 <td style="text-align: center">{{item.prix}}€</td>
                 <td>
                     <input ng-model="item.nbQuantite" disabled size="7">
-                    <button ng-click="$ctrl.plus(item)" class="btn btn-default glyphicon glyphicon-plus" ng-disabled="item.nbQuantite === 10"></button>
                     <button ng-click="$ctrl.moins(item)" class="btn btn-default glyphicon glyphicon-minus" ng-disabled="item.nbQuantite === 1"></button>
+                    <button ng-click="$ctrl.plus(item)" class="btn btn-default glyphicon glyphicon-plus" ng-disabled="item.nbQuantite === 10"></button>
                 </td>
             </tr>
             <tr>
                 <td colspan="3" style="text-align: right">
-                    Total à payer
+                    Code Promotion
                 </td>
                 <td>
-                    {{$ctrl.totalPanier}}€
+                    <input ng-model="$ctrl.code" size="7">
+                    <button ng-click="$ctrl.promo()" class="btn btn-default glyphicon glyphicon-send" ng-disabled="$ctrl.code == null || $ctrl.code == ''"></button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: right">
+                    Total<br> Promotion -10%<br> Total à payer
+                </td>
+                <td>
+                    {{$ctrl.totalPanier}}€<br> {{$ctrl.promotion}}€
+                    <br> {{$ctrl.totalPayer}}€
                 </td>
             </tr>
         </tbody>
